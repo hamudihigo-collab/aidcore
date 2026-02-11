@@ -1,27 +1,32 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
     content: [
-        './index.html',
-        './src/**/*.{js,jsx,ts,tsx}',
+        "./index.html",
+        "./src/**/*.{js,jsx,ts,tsx}"
     ],
     theme: {
         extend: {
             colors: {
-                primary: {
-                    50: '#f0f9ff',
-                    100: '#e0f2fe',
-                    200: '#bae6fd',
-                    300: '#7dd3fc',
-                    400: '#38bdf8',
-                    500: '#0ea5e9',
-                    600: '#0284c7',
-                    700: '#0369a1',
-                    800: '#075985',
-                    900: '#0c3d66',
-                },
+                background: 'hsl(var(--background))',
+                foreground: 'hsl(var(--foreground))',
+                card: 'hsl(var(--card))',
+                'card-foreground': 'hsl(var(--card-foreground))',
+                primary: 'hsl(var(--primary))',
+                'primary-foreground': 'hsl(var(--primary-foreground))',
+                secondary: 'hsl(var(--secondary))',
+                'secondary-foreground': 'hsl(var(--secondary-foreground))',
+                muted: 'hsl(var(--muted))',
+                'muted-foreground': 'hsl(var(--muted-foreground))',
+                accent: 'hsl(var(--accent))',
+                'accent-foreground': 'hsl(var(--accent-foreground))',
+                destructive: 'hsl(var(--destructive))',
+                'destructive-foreground': 'hsl(var(--destructive-foreground))',
+                border: 'hsl(var(--border))',
+                input: 'hsl(var(--input))',
+                ring: 'hsl(var(--ring))',
             },
-            fontFamily: {
-                sans: ['Inter', 'system-ui', 'sans-serif'],
+            borderRadius: {
+                DEFAULT: 'var(--radius)',
             },
         },
     },
